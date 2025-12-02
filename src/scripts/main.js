@@ -16,13 +16,10 @@ const pushNotification = (posTop, posRight, title, description, type) => {
   div.style.position = 'absolute';
   div.style.top = posTop + 'px';
   div.style.right = posRight + 'px';
-  div.style.transition = 'opacity 0.5s ease';
-  div.style.opacity = '1';
 
   body.append(div);
 
   setTimeout(() => {
-    div.style.opacity = '0';
     div.style.display = 'none';
   }, 2000);
 };
